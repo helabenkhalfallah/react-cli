@@ -57,4 +57,4 @@ const featureName = args[3];
 const pageName = args[5];
 
 // eslint-disable-next-line max-len
-shell.exec(`./react-cmd-cli/scripts/create-page.sh -feature ${featureName} -page ${pageName} -components ${components.join(' ')}`);
+shell.exec(`./scripts/create-page.sh -feature ${featureName} -page ${pageName} -components ${components.join(' ')}`);

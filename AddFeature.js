@@ -9,4 +9,4 @@ if (args.length < 3) {
 
 // create feature directory
 const featureName = args[2];
-shell.exec(`./react-cmd-cli/scripts/create-feature.sh ${featureName}`);
+shell.exec(`./scripts/create-feature.sh ${featureName}`);
