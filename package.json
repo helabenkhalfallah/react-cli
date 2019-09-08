@@ -22,5 +22,8 @@
   "homepage": "https://github.com/helabenkhalfallah/react-cmd-cli#readme",
   "keywords": [
     "react-cmd-cli"
-  ]
+  ],
+  "devDependencies": {
+    "@babel/node": "=7.6.1"
+  }
 }
