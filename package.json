@@ -3,7 +3,7 @@
   "license": "MIT",
   "version": "0.0.1",
   "description": "react cli ",
-  "author": "Ben Khalfallah Héla",
+  "author": "Hela Ben Khalfallah",
   "main": "react-cli/index.js",
   "scripts": {
     "add-feature": "babel-node ./react-cli/AddFeature.js",
