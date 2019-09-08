@@ -3,10 +3,10 @@
 # add-conf-var.sh -name varName -value varValue
 
 # paths
-confPath="../../conf"
+confPath="../../../conf"
 confFiltersPath="${confPath}/filters"
 dataFrontSrvPath="${confPath}/ressources/byenv/dataFrontSrv.properties"
-awtPagePath="../../bff/src/main/webapp/WEB-INF/awt-page.jsp"
+awtPagePath="../../../bff/src/main/webapp/WEB-INF/awt-page.jsp"
 
 # user inputs
 varName=$2
