@@ -1,0 +1,25 @@
+{
+  "name": "react-cli",
+  "version": "0.0.1",
+  "description": "react cli ",
+  "main": "react-cli/index.js",
+  "scripts": {
+    "add-feature": "babel-node ./react-cli/AddFeature.js",
+    "add-page": "babel-node ./react-cli/AddPage.js",
+    "init-redux-saga": "babel-node ./react-cli/init-redux-saga.js",
+    "connect-page-to-redux-service": "babel-node ./react-cli/connect-page-to-redux-service.js",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helabenkhalfallah/react-cli.git"
+  },
+  "author": "Ben Khalfallah Héla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/helabenkhalfallah/react-cli/issues"
+  },
+  "homepage": "https://github.com/helabenkhalfallah/react-cli#readme",
+  "keywords": [
+    "react-cli"
+  ]
+}
