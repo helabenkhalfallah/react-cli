@@ -1,25 +1,25 @@
 {
-  "name": "react-cli",
+  "name": "react-cmd-cli",
   "license": "MIT",
   "version": "0.0.1",
   "description": "react cli ",
   "author": "Hela Ben Khalfallah",
-  "main": "react-cli/index.js",
+  "main": "react-cmd-cli/index.js",
   "scripts": {
-    "add-feature": "babel-node ./react-cli/AddFeature.js",
-    "add-page": "babel-node ./react-cli/AddPage.js",
-    "init-redux-saga": "babel-node ./react-cli/init-redux-saga.js",
-    "connect-page-to-redux-service": "babel-node ./react-cli/connect-page-to-redux-service.js"
+    "add-feature": "babel-node ./react-cmd-cli/AddFeature.js",
+    "add-page": "babel-node ./react-cmd-cli/AddPage.js",
+    "init-redux-saga": "babel-node ./react-cmd-cli/InitReduxSaga.js",
+    "connect-page-to-redux-service": "babel-node ./react-cmd-cli/ConnectPageToReduxService.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/helabenkhalfallah/react-cli.git"
+    "url": "git+https://github.com/helabenkhalfallah/react-cmd-cli.git"
   },
   "bugs": {
-    "url": "https://github.com/helabenkhalfallah/react-cli/issues"
+    "url": "https://github.com/helabenkhalfallah/react-cmd-cli/issues"
   },
-  "homepage": "https://github.com/helabenkhalfallah/react-cli#readme",
+  "homepage": "https://github.com/helabenkhalfallah/react-cmd-cli#readme",
   "keywords": [
-    "react-cli"
+    "react-cmd-cli"
   ]
 }

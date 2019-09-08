@@ -46,7 +46,7 @@ then
 fi
 
 # if feature no exist create it
-./react-cli/scripts/create-feature.sh $2
+./react-cmd-cli/scripts/create-feature.sh $2
 
 # paths
 srcPagePath="front-js/js/features/$2/pages"
