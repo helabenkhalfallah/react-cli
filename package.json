@@ -1,11 +1,17 @@
 {
   "name": "react-cmd-cli",
   "license": "MIT",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "react cli ",
   "author": "Hela Ben Khalfallah",
   "main": "index.js",
   "scripts": {},
+  "bin": {
+    "add-feature": "./AddFeature.js",
+    "add-page": "./AddPage.js",
+    "init-redux-saga": "./InitReduxSaga.js",
+    "connect-page-to-redux-service": "./ConnectPageToReduxService.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/helabenkhalfallah/react-cmd-cli.git"
