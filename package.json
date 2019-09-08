@@ -1,7 +1,9 @@
 {
   "name": "react-cli",
+  "license": "MIT",
   "version": "0.0.1",
   "description": "react cli ",
+  "author": "Ben Khalfallah Héla",
   "main": "react-cli/index.js",
   "scripts": {
     "add-feature": "babel-node ./react-cli/AddFeature.js",
@@ -13,8 +15,6 @@
     "type": "git",
     "url": "git+https://github.com/helabenkhalfallah/react-cli.git"
   },
-  "author": "Ben Khalfallah Héla",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/helabenkhalfallah/react-cli/issues"
   },
