@@ -1,10 +1,4 @@
 #!/bin/bash
-# script creation : 
-# 1/ go to project folder
-# 2/ touch connect-page-to-redux-service.sh
-# 3/ chmod +x connect-page-to-redux-service.sh
-# 4/ alias connect-page-to-redux-service='./connect-page-to-redux-service.sh'
-# 5/ copy paste same below content
 # script launch :
 # connect-page-to-redux-service -feature feature -page page -service service -service-data service-data -query-type post/get -query-params object-name  
 # connect-page-to-redux-service -feature users -page UserListPage -service UserList -service-data users -query-type get
@@ -24,7 +18,7 @@
 # $12: user
 
 # projet file path
-srcPath=./src
+srcPath="../../js/features"
 commonsPath=$(echo "${srcPath}/commons")
 reduxApiPath=$(echo "${commonsPath}/redux")
 reducerRootFile=$(echo "${reduxApiPath}/ReducerRoot.js")
@@ -549,15 +543,6 @@ const query = (baseUrl, params) => {
   return ${sagaQueryType}(url, params);
 };
 
-// parse response
-const parseResponse = response => {
-  console.log('${reducerQueryName} parse response : ', response);
-  return {
-    error: null,
-    data: null,
-  };
-};
-
 // saga worker
 export default function* ${reducerQueryName}(${sagaAction}) {
   try {
@@ -573,7 +558,10 @@ export default function* ${reducerQueryName}(${sagaAction}) {
     console.log('${reducerQueryName} response : ', response);
 
     // parse response
-    const { error, data: ${serviceData} } = parseResponse(response);
+    const { 
+      error, 
+      data: ${serviceData},
+    } = ResponseFormatter(response);
     console.log('${reducerQueryName} error : ', error);
     console.log('${reducerQueryName} data : ', ${serviceData});
 

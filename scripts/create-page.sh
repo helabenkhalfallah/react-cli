@@ -1,10 +1,4 @@
 #!/bin/bash
-# script creation : 
-# 1/ go to project folder
-# 2/ touch create-page.sh
-# 3/ chmod +x create-page.sh
-# 4/ alias create-page='./create-page.sh'
-# 5/ copy paste same below content
 # script launch : 
 # create-page -feature feature -page page -components CA CB
 # create-page -feature users -page UsersListPage -components UserList UserListRow
@@ -51,7 +45,7 @@ fi
 # paths
 srcPagePath="../../js/features/$2/pages"
 srcComponentsPath="../../js/features/$2/components"
-srcRoutesPath="../../js/Routes.js"
+srcRoutesPath="../../js/Routes.jsx"
 componentsPath="../components"
 
 # create empty page
@@ -209,7 +203,7 @@ pageRender="
 pageExport="export default $4;\n"
 echo -n -e "${pageAPIImport}\n${pageComponentsImport}\n${pageStructure}\n${pageRender}\n${pageExport}" > ${pagePath}
 
-# add page to Routes.js if not exist
+# add page to Routes.jsx if not exist
 if grep -q -n $4 "${srcRoutesPath}"
 then 
   echo "Page $4 Created Successfully (route exist)"

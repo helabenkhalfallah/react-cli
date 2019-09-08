@@ -1,13 +1,14 @@
 {
   "name": "react-cmd-cli",
   "license": "MIT",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "react cli ",
   "author": "Hela Ben Khalfallah",
   "main": "index.js",
   "scripts": {
     "add-feature": "babel-node ./AddFeature.js",
     "add-page": "babel-node ./AddPage.js",
+    "add-conf-var": "babel-node ./AddConfVar.js",
     "init-redux-saga": "babel-node ./InitReduxSaga.js",
     "connect-page-to-redux-service": "babel-node ./ConnectPageToReduxService.js"
   },
@@ -27,5 +28,10 @@
     "@babel/node": "=7.6.1",
     "@babel/preset-env": "^7.6.0",
     "shelljs": "^0.8.3"
+  },
+  "dependencies": {
+    "react-redux": "^7.1.1",
+    "redux": "^4.0.4",
+    "redux-saga": "^1.0.5"
   }
 }

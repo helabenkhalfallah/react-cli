@@ -57,4 +57,9 @@ const featureName = args[3];
 const pageName = args[5];
 
 // eslint-disable-next-line max-len
-shell.exec(`./scripts/create-page.sh -feature ${featureName} -page ${pageName} -components ${components.join(' ')}`);
+if (components
+  && components.length) {
+  shell.exec(`./scripts/create-page.sh -feature ${featureName} -page ${pageName} -components ${components.join(' ')}`);
+} else {
+  shell.exec(`./scripts/create-page.sh -feature ${featureName} -page ${pageName}`);
+}
