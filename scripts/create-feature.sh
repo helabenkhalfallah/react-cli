@@ -12,7 +12,7 @@ then
   exit -1;
 fi
 
-srcPath="./front-js/js/features"
+srcPath="../../js/features"
 mkdir -p ${srcPath}/$1 
 mkdir -p ${srcPath}/$1/pages ${srcPath}/$1/components ${srcPath}/$1/services ${srcPath}/$1/commons
 echo "Feature $1 Created Successfully"

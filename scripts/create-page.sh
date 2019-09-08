@@ -49,9 +49,9 @@ fi
 ./scripts/create-feature.sh $2
 
 # paths
-srcPagePath="front-js/js/features/$2/pages"
-srcComponentsPath="front-js/js/features/$2/components"
-srcRoutesPath="front-js/js/Routes.js"
+srcPagePath="../../js/features/$2/pages"
+srcComponentsPath="../../js/features/$2/components"
+srcRoutesPath="../../js/Routes.js"
 componentsPath="../components"
 
 # create empty page
