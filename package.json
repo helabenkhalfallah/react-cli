@@ -1,11 +1,12 @@
 {
   "name": "react-cmd-cli",
   "license": "MIT",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "react cli ",
   "author": "Hela Ben Khalfallah",
   "main": "index.js",
-  "scripts": {
+  "scripts": {},
+  "bin": {
     "add-feature": "babel-node ./AddFeature.js",
     "add-page": "babel-node ./AddPage.js",
     "init-redux-saga": "babel-node ./InitReduxSaga.js",
