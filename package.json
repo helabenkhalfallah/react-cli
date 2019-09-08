@@ -5,7 +5,9 @@
   "description": "react cli ",
   "author": "Hela Ben Khalfallah",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "add-feature": "babel-node ./AddFeature.js"
+  },
   "bin": {
     "add-feature": "babel-node ./AddFeature.js",
     "add-page": "babel-node ./AddPage.js",
@@ -24,6 +26,8 @@
     "react-cmd-cli"
   ],
   "devDependencies": {
-    "@babel/node": "=7.6.1"
+    "@babel/core": "^7.6.0",
+    "@babel/node": "=7.6.1",
+    "shelljs": "^0.8.3"
   }
 }
