@@ -7,7 +7,7 @@
     "add-feature": "babel-node ./react-cli/AddFeature.js",
     "add-page": "babel-node ./react-cli/AddPage.js",
     "init-redux-saga": "babel-node ./react-cli/init-redux-saga.js",
-    "connect-page-to-redux-service": "babel-node ./react-cli/connect-page-to-redux-service.js",
+    "connect-page-to-redux-service": "babel-node ./react-cli/connect-page-to-redux-service.js"
   },
   "repository": {
     "type": "git",
