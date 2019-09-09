@@ -59,7 +59,7 @@ const pageName = args[5];
 // eslint-disable-next-line max-len
 if (components
   && components.length) {
-  shell.exec(`./scripts/create-page.sh -feature ${featureName} -page ${pageName} -components ${components.join(' ')}`);
+  shell.exec(`create-page.sh -feature ${featureName} -page ${pageName} -components ${components.join(' ')}`);
 } else {
-  shell.exec(`./scripts/create-page.sh -feature ${featureName} -page ${pageName}`);
+  shell.exec(`create-page.sh -feature ${featureName} -page ${pageName}`);
 }
