@@ -27,4 +27,4 @@ const varName = args[3];
 const varValue = args[5];
 
 // execute script
-shell.exec(`./scripts/add-conf-var.sh -name ${varName} -value ${varValue}`);
+shell.exec(`add-conf-var.sh -name ${varName} -value ${varValue}`);
