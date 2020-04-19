@@ -125,10 +125,10 @@ if (queryType === 'post') {
   // call sh script with post
   const queryParams = args[13];
   console.log('queryParams : ', queryParams);
-  shell.exec(`./scripts/connect-page-to-redux-service.sh -feature ${featureName} -page ${pageName} -service ${serviceName} -service-data ${serviceData} -query-type post -query-params ${queryParams}`);
+  shell.exec(`connect-page-to-redux-service.sh -feature ${featureName} -page ${pageName} -service ${serviceName} -service-data ${serviceData} -query-type post -query-params ${queryParams}`);
 } else if (queryType === 'get') {
   // call sh script with get
-  shell.exec(`./scripts/connect-page-to-redux-service.sh -feature ${featureName} -page ${pageName} -service ${serviceName} -service-data ${serviceData} -query-type get`);
+  shell.exec(`connect-page-to-redux-service.sh -feature ${featureName} -page ${pageName} -service ${serviceName} -service-data ${serviceData} -query-type get`);
 } else {
   // wrong query type
   shell.echo('Command syntaxe error (query-type) must be get or post');

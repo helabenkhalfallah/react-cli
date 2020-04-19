@@ -9,4 +9,4 @@ if (args.length < 3) {
 
 // create feature directory
 const featureName = args[2];
-shell.exec(`./scripts/create-feature.sh ${featureName}`);
+shell.exec(`create-feature.sh ${featureName}`);
